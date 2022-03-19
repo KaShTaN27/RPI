@@ -4,6 +4,10 @@
     height: 689px;
 }
 
+.column {
+    position: relative;
+}
+
 .road {
     position: absolute;
     top: 418px;
