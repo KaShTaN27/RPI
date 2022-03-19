@@ -1,3 +1,3 @@
 # RPI
 Workplace for UI development 
-Web-site: [Atlantida](https://github.com/KaShTaN27/RPI/blob/secondSection/atlantida.html)
+Web-site: [Atlantida](https://KaShTaN27.github.io/RPI/blob/secondSection/atlantida.html)
