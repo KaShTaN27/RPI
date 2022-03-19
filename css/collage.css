@@ -1,0 +1,25 @@
+.photoCollage {
+    display: flex;
+    background-color: #242424;
+    height: 689px;
+}
+
+.road {
+    position: absolute;
+    top: 418px;
+}
+
+.face {
+    position: absolute;
+    top: 303px;
+}
+
+.underWater {
+    position: absolute;
+    top: 230px;
+}
+
+.cup {
+    position: absolute;
+    top: 436px;
+}
