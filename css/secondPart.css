@@ -1,7 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .secondSection {
     width: 1600px;
-}
 
-.photoCollage {
-    display: flex;
 }
