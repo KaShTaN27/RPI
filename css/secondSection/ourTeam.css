@@ -1,0 +1,27 @@
+.ourTeam {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../images/ourTeam/fon.jpg");
+    height: 666px;
+}
+
+.label {
+    font-family: Amsdam, serif;
+    font-size: 20px;
+    color: #3e3d3d;
+    margin-top: 71px;
+}
+
+.divider {
+    margin-top: 27px;
+}
+
+.ourTeamText {
+    font-family: "Crimson Text";
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #3e3d3d;
+}
