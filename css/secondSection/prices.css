@@ -1,0 +1,82 @@
+.prices {
+    height: 922px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.price {
+    background-color: #ffffff;
+    width: 369px;
+    height: 551px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plan {
+    font-family: Montserrat;
+    font-size: 13px;
+    color: #3e3d3d;
+    margin: 46px 0 26px 0;
+}
+
+.planDivider {
+    height: 50px;
+    width: 369px;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.line {
+    position: absolute;
+    left: 71px;
+    top: 24px;
+}
+
+.circle {
+    position: absolute;
+    left: 160px;
+}
+
+.lock {
+    position: absolute;
+    left: 177px;
+    top: 14px;
+}
+
+.speaker {
+    position: absolute;
+    left: 173px;
+    top: 16px;
+}
+
+.accept {
+    position: absolute;
+    left: 175px;
+    top: 15px;
+}
+
+.priceFont {
+    font-family: Montserrat;
+    font-size: 70px;
+    color: #3e3d3d;
+    margin-bottom: 52px;
+}
+
+.privileges {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    font-family: 'Crimson Text', cursive;
+    font-size: 16px;
+    font-style: italic;
+    color: #3e3d3d;
+    margin-bottom: 51px;
+}
+
+.signup {
+    padding: 14px 43px 12px 33px;
+    font-size: 13px;
+}

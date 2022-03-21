@@ -1,0 +1,29 @@
+.portfolio {
+    height: 360px;
+    background-color: #ffffff;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.lblPortfolio {
+    padding-top: 83px;
+    font-family: Amsdam;
+    font-size: 20px;
+    color: #3e3d3d;
+}
+
+.btn {
+    background-color: #ffffff;
+    border: 3px solid #3e3d3d;
+    color: #3e3d3d;
+    padding: 11px 23px 11px 23px;
+    font-family: Montserrat;
+    font-size: 11px;
+    color: #3e3d3d;
+}
+
+.btn:hover {
+    background-color: #3e3d3d;
+    color: #ffffff;
+}
