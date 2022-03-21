@@ -1,6 +1,7 @@
 .ourTeam {
     display: flex;
     align-items: center;
+    /*justify-content: center;*/
     flex-direction: column;
     background-image: url("../../images/ourTeam/fon.jpg");
     height: 666px;
@@ -15,13 +16,35 @@
 
 .divider {
     margin-top: 27px;
+    margin-bottom: 37px;
 }
 
 .ourTeamText {
     font-family: "Crimson Text";
     font-size: 14px;
-    line-height: 25px;
-    font-weight: 400;
-    letter-spacing: 0.1em;
     color: #3e3d3d;
+    margin: 0 306px 56px 306px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    position: relative;
+}
+
+.showInfo:hover .info{
+    display: block;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    width: 256px;
+    height: 321px;
+    opacity: 0.81;
+    background-color: #f6f6f6;
 }
