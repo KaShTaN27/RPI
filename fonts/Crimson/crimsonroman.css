@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Crimson Text';
+    src: local('Crimson Text'), local('CrimsonText-Roman'), url('crimsontext.woff2') format('woff2'), url('crimsontext.woff') format('woff'), url('crimsontext.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
