@@ -16,7 +16,7 @@
     background-color: #2d2d2f;
     font-family: Montserrat;
     font-size: 13px;
-    line-height: 44px;
+    line-height: 24px;
     font-weight: 400;
     letter-spacing: 0.1em;
     color: #e3e3e3;
@@ -26,7 +26,6 @@
 .button-purchase:hover{
     color: #2d2d2f;
     background-color: #e3e3e3;
-    border-color: #000000;
 }
 
 .black-flex{
