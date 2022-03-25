@@ -20,12 +20,22 @@
     background-image: url("../images/line_3038.png");
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 516px;
+    height: 109px;
+    margin: 23px 294px 44px;
+}
+
+.weAreAtlT>p{
     font-family: Amsdam;
     font-size: 35.7px;
-    line-height: 200px;
     font-weight: 400;
     letter-spacing: 0.1em;
     color: #ffffff;
+    text-align: center;
 }
 
 .getStarted{
@@ -41,6 +51,8 @@
 }
 
 .getStartedButton{
+    background: none;
+    border: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,27 +78,30 @@
     height: 698px;
     background-image: url("../images/image_3041.png");
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: stretch;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .sliderCenter{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     //justify-self: center;
     justify-content: center;
     align-items: center;
 }
 
+.sliderCenter img:hover{
+    transform: scale(1.1);
+}
+
 .StT{
     font-family: 'Crimson Text';
     font-size: 14px;
-    line-height: 50px;
     font-weight: 400;
     letter-spacing: 0.1em;
     color: #ffffff;
+    margin-top:261px;
 }
 
 .atlantida{
