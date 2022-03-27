@@ -48,3 +48,26 @@
     opacity: 0.81;
     background-color: #f6f6f6;
 }
+
+.shortBio {
+    width: 146px;
+    margin-top: 210px;
+    margin-left: 19px;
+}
+
+.specialty {
+    margin: 8px 0 9px 0;
+    font-family: 'Crimson Text';
+    font-size: 14px;
+    font-style: italic;
+    color: #3e3d3d;
+}
+
+.fio {
+    font-family: Montserrat;
+    font-size: 13px;
+    line-height: 18px;
+    color: #3e3d3d;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
