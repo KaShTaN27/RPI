@@ -1,0 +1,186 @@
+.blackBlock{
+    width: 1600px;
+    height: 178px;
+    background-color: #2d2d2f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.button-purchase{
+    margin-left: 50px;
+    width: 134px;
+    height: 40px;
+    border: 2px solid #e3e3e3;
+    background-color: #2d2d2f;
+    font-family: Montserrat;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #e3e3e3;
+    text-align: center;
+}
+
+.button-purchase:hover{
+    color: #2d2d2f;
+    background-color: #e3e3e3;
+}
+
+.black-flex{
+    margin-left: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.black-flex :nth-child(1){
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #d8d8d8;
+    margin-top: 10px;
+}
+
+.black-flex :nth-child(2){
+    font-family: 'Crimson Text';
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: #888888;
+    margin-top: 15px;
+}
+
+.blog-flex{
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 300px;
+}
+
+.blog-flex :nth-child(1){
+    font-family: Amsdam;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #3e3d3d;
+    margin-top: 60px;
+}
+
+.blog-flex :nth-child(3){
+    font-family: 'Crimson Text';
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #3e3d3d;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.image-text{
+    height: 412px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+}
+
+.image-child{
+    width: 400px;
+    height: 412px;
+}
+
+.author-style{
+    font-family: 'Crimson Text';
+    font-size: 12px;
+    line-height: 18px;
+    font-style: italic;
+    color: #e3e3e3;
+    margin: 50px 38px 5px;
+}
+
+.title-style{
+    height: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 35px;
+    align-items: center;
+}
+
+.title-style :nth-child(2){
+    font-family: Montserrat;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #e3e3e3;
+    margin-left: 20px;
+}
+
+.text-style{
+    font-family: 'Crimson Text';
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #949494;
+    margin: 20px 37px 10px 40px;
+}
+
+.whiteBlock{
+    width: 1600px;
+    height: 524px;
+    background-color: #ffffff;
+}
+
+.flexBox{
+    width: 1000px;
+    height: 424px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 300px;
+}
+
+.flexBox :nth-child(1){
+    font-family: Amsdam;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #3e3d3d;
+    margin-top: 70px;
+}
+
+.flexBox :nth-child(3){
+    font-family: 'Crimson Text';
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #3e3d3d;
+    text-align: center;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+}
