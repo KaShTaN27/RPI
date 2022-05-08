@@ -81,7 +81,7 @@ function Modal(){
 }
 
 function Proc(){
-    let boxes = document.querySelectorAll(".price");
+    let boxes = document.querySelectorAll(".btn");
     for(let div of boxes){
         let button = div.querySelector(".BasicButton");
         button.addEventListener("click",Modal);
