@@ -63,7 +63,7 @@ function Modal(event){
     phone.append(labelPhone);
     let inputPhone = document.createElement("input");
     inputPhone.type = "text";
-    const regPhone = /^+\d{12}$/;
+    const regPhone = /^[+][\d]{12}$/;
     inputPhone.addEventListener("input",(event)=>{
         if(regPhone.test(event.target.value)){
             event.target.style.color = "green";
@@ -81,9 +81,9 @@ function Modal(event){
 }
 
 function Proc(){
-    let boxes = document.querySelectorAll(".btn");
+    let boxes = document.querySelectorAll(".price");
     for(let div of boxes){
-        let button = div.querySelector(".signup");
+        let button = div.querySelector(".btn .signup");
         button.addEventListener("click",Modal);
     }
 }
