@@ -81,7 +81,7 @@ function Modal(){
 }
 
 function Proc(){
-    let boxes = document.querySelectorAll(".btn");
+    let boxes = document.querySelectorAll(".btn .signup");
     for(let div of boxes){
         let button = div.querySelector(".BasicButton");
         button.addEventListener("click",Modal);
