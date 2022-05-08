@@ -9,7 +9,7 @@ function ShowWindow(content, top, left, time, style=""){
     setTimeout(() => {message.remove();}, time);
 }
 
-function Modal(){
+function Modal(event){
     let back = document.createElement("div");
     back.className = "ground";
     document.documentElement.prepend(back);
@@ -81,9 +81,9 @@ function Modal(){
 }
 
 function Proc(){
-    let boxes = document.querySelectorAll(".btn .signup");
+    let boxes = document.querySelectorAll(".btn");
     for(let div of boxes){
-        let button = div.querySelector(".BasicButton");
+        let button = div.querySelector(".signup");
         button.addEventListener("click",Modal);
     }
 }
