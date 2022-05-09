@@ -17,25 +17,58 @@
 }
 
 .weAreAtlT{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+
+     width: 1200px;
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+     justify-content: flex-start;
+ }
+
+.weAreAtlT1{
     background-image: url("../images/line_3038.png");
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    width: 516px;
     height: 109px;
-    margin: 23px 294px 44px;
+    margin: 23px 0px 44px 0px;
+
+    width: 1200px;
 }
 
-.weAreAtlT>p{
+.slider-element{
     font-family: Amsdam;
     font-size: 35.7px;
     font-weight: 400;
     letter-spacing: 0.1em;
     color: #ffffff;
     text-align: center;
+    width: 1200px;
+    display: block;
+    flex: 0 0 auto;
+}
+
+slider-button-left,
+slider-button-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 32;
+}
+
+slider-button-left:hover {
+    opacity: 1.0;
+}
+
+slider-button-right:hover {
+    opacity: 1.0;
 }
 
 .getStarted{
@@ -86,9 +119,12 @@
 .sliderCenter{
     display: flex;
     flex-direction: row;
-    //justify-self: center;
+    justify-self: center;
     justify-content: center;
     align-items: center;
+
+    width: auto;
+    position: relative;
 }
 
 .sliderCenter img:hover{
