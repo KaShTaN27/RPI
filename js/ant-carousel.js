@@ -12,8 +12,8 @@ function Ant(crslId) {
     this.crslList = this.crslRoot.querySelector('.weAreAtlT');
     this.crslElements = this.crslList.querySelectorAll('.slider-element');
     this.crslElemFirst = this.crslList.querySelector('.slider-element');
-    this.leftArrow = this.crslRoot.querySelector('div.slider-button-left');
-    this.rightArrow = this.crslRoot.querySelector('div.slider-button-right');
+    this.leftArrow = this.crslRoot.querySelector('.slider-button-left');
+    this.rightArrow = this.crslRoot.querySelector('.slider-button-right');
 
     // Initialization
     this.options = Ant.defaults;
@@ -117,9 +117,9 @@ Ant.prototype.elemPrev = function(num) {
     else {                    // сдвиг вправо с циклом
         let elm, buf, this$ = this;
         for(let i=0; i<num; i++) {
-            elm = this.crslList.lastElementChild;
+            elm = this.crslList.firstElementChild;
             buf = elm.cloneNode(true);
-            this.crslList.insertBefore(buf, this.crslList.firstElementChild);
+            this.crslList.appendChild(buf);
             this.crslList.removeChild(elm)
         };
         this.crslList.style.marginLeft = '-' + this.elemWidth*num + 'px';
@@ -135,15 +135,13 @@ Ant.prototype.elemPrev = function(num) {
 Ant.prototype.elemNext = function(num) {
     num = num || 1;
 
-    if(this.options.dots) this.dotOn(this.currentElement);
     this.currentElement += num;
-    if(this.currentElement >= this.dotsVisible) this.currentElement = 0;
-    if(this.options.dots) this.dotOff(this.currentElement);
+    if(this.currentElement >= this.elemCount) this.currentElement = 0;
 
     if(!this.options.loop) {  // сдвиг влево без цикла
         this.currentOffset -= this.elemWidth*num;
         this.crslList.style.marginLeft = this.currentOffset + 'px';
-        if(this.currentElement == this.dotsVisible-1) {
+        if(this.currentElement == this.elemCount-1) {
             this.rightArrow.style.display = 'none'; this.touchNext = false
         }
         this.leftArrow.style.display = 'block'; this.touchPrev = true
@@ -152,12 +150,14 @@ Ant.prototype.elemNext = function(num) {
         let elm, buf, this$ = this;
         this.crslList.style.cssText = 'transition:margin '+this.options.speed+'ms ease;';
         this.crslList.style.marginLeft = '-' + this.elemWidth*num + 'px';
+        let tempAnt = this;
         setTimeout(function() {
             this$.crslList.style.cssText = 'transition:none;';
             for(let i=0; i<num; i++) {
-                elm = this$.crslList.firstElementChild;
-                buf = elm.cloneNode(true); this$.crslList.appendChild(buf);
-                this$.crslList.removeChild(elm)
+                elm = tempAnt.crslList.lastElementChild;
+                buf = elm.cloneNode(true);
+                tempAnt.crslList.insertBefore(buf, tempAnt.crslList.firstElementChild);
+                tempAnt.crslList.removeChild(elm)
             };
             this$.crslList.style.marginLeft = '0px'
         }, this.options.speed)
