@@ -350,7 +350,12 @@
     color: #cfcfcf;
 }
 
-.clear_button:hover{
+.clear_button:disabled {
+    background-color: #3e3d3d;
+    color: #757575;
+}
+
+.clear_button:hover:enabled{
     background-color: #cecece;
     color: #3e3d3d;
 }

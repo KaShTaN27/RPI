@@ -33,6 +33,7 @@
 </head>
 <body>
 <main class="backGround">
+    <div id="alert" class="alert">The form was submitted successfully</div>
     <nav class="topMenu">
         <div class="logo">
             <div class="atlantidaLogo">
@@ -615,17 +616,17 @@
                     </div>
                     <div class="edits">
                         <div class="first_double_edit">
-                            <input id="edit1" class="first_edit" type="text" size="30" value="    Name*">
-                            <input id="edit2" class="second_edit" type="text" size="30" value="    E-mail*">
+                            <input id="edit1" class="first_edit" type="text" size="30" placeholder="Name*" required>
+                            <input id="edit2" class="second_edit" type="email" size="30" placeholder="E-mail*" required>
                         </div>
                         <div style="margin-top: 30px" class="first_double_edit">
-                            <input id="edit3" class="first_edit" type="text" size="30" value="    Telephone*">
-                            <input id="edit4" class="second_edit" type="text" size="30" value="    Website">
+                            <input id="edit3" class="first_edit" type="tel" size="30" placeholder="Telephone*" required>
+                            <input id="edit4" class="second_edit" type="text" size="30" placeholder="Website">
                         </div>
                         <div style="margin-top: 30px">
-                            <input id="edit5" class="big_edit" type="text" size="66" value="    Message*">
+                            <input id="edit5" class="big_edit" type="text" size="66" placeholder="Message">
                         </div>
-                        <button type="button" onclick="my_function()" id="test_button" class="clear_button">Submit
+                        <button type="button"  id="test_button" disabled class="clear_button">Submit
                         </button>
                     </div>
                 </div>
@@ -640,4 +641,5 @@
 </body>
     <link rel="stylesheet" href="css/ModalStyle.css">
 	<script src="ModalWindow.js"></script>
+    <script src="contactForm.js"></script>
 </html>
