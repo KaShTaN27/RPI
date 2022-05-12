@@ -135,9 +135,11 @@ function Modal(){
     submit.className = "for-button";
     submit.textContent = "submit";
     submit.addEventListener("click", ()=>{
-        if(Name && Mail && Phone) ShowWindow("The registration was successful. Expect an email message.");
-        Already = true;
-        localStorage.setItem("Already","1");
+        if(Name && Mail && Phone){
+            ShowWindow("The registration was successful. Expect an email message.");
+            Already = true;
+            localStorage.setItem("Already","1");
+        }
     });
     modalWindow.append(submit);
 }
