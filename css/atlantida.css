@@ -28,6 +28,15 @@
      justify-content: flex-start;
  }
 
+.ant-carousel-list
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: flex-start;
+}
+
 .weAreAtlT1{
     background-image: url("../images/line_3038.png");
     background-repeat: no-repeat;
@@ -40,8 +49,7 @@
 
     width: 1200px;
 }
-
-.slider-element{
+.weAreAtlTEl{
     font-family: Amsdam;
     font-size: 35.7px;
     font-weight: 400;
@@ -49,12 +57,14 @@
     color: #ffffff;
     text-align: center;
     width: 1200px;
+}
+.ant-carousel-element{
     display: block;
     flex: 0 0 auto;
 }
 
-slider-button-left,
-slider-button-right {
+ant-carousel-arrow-left,
+ant-carousel-arrow-right {
     width: 22px;
     height: 40px;
     position: absolute;
@@ -63,11 +73,11 @@ slider-button-right {
     z-index: 32;
 }
 
-slider-button-left:hover {
+ant-carousel-arrow-left:hover {
     opacity: 1.0;
 }
 
-slider-button-right:hover {
+ant-carousel-arrow-right:hover {
     opacity: 1.0;
 }
 
@@ -122,9 +132,28 @@ slider-button-right:hover {
     justify-self: center;
     justify-content: center;
     align-items: center;
+}
 
+.ant-carousel{
     width: auto;
     position: relative;
+}
+
+div.ant-carousel-dots {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+span.ant-dot {
+    width: 12px;
+    height: 12px;
+    margin: 5px 3px;
+    padding: 0;
+    display: inline-block;
+    background-color: #c5c5c5;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .sliderCenter img:hover{
