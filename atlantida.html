@@ -60,16 +60,16 @@
     <section>
         <div class="slider">
             <p class="StT">Design Studio and Digital Agency</p>
-            <div class="sliderCenter">
-                <img class="slider-button-left" style="align-self: center" src="images/1633.png">
+            <div class="sliderCenter ant-carousel" id="slider-one">
+                <img class="ant-carousel-arrow-left" style="align-self: center" src="images/1633.png">
                 <div class="weAreAtlT1">
-                    <div class="weAreAtlT">
-                        <p class="slider-element">WE ARE ATLANTIDA</p>
-                        <p class="slider-element">WE ARE NOT ATLANTIDA</p>
-                        <p class="slider-element">WE ATLANTIDA</p>
+                    <div class="weAreAtlT ant-carousel-list">
+                        <p class="ant-carousel-element weAreAtlTEl">WE ARE ATLANTIDA</p>
+                        <p class="ant-carousel-element weAreAtlTEl">WE ARE NOT ATLANTIDA</p>
+                        <p class="ant-carousel-element weAreAtlTEl">WE ATLANTIDA</p>
                     </div>
                 </div>
-                <img class="slider-button-right" style="align-self: center" src="images/1635.png">
+                <img class="ant-carousel-arrow-right" style="align-self: center" src="images/1635.png">
             </div>
             <button class="getStartedButton">
                 <p class="getStarted">Get Started</p>
@@ -246,7 +246,7 @@
 
         <script src="js/ant-carousel.js"></script>
 
-        <script>new Ant()</script>
+        <script>new Ant("slider-one", true, false)</script>
     </section>
 
     <!--Dima-->
@@ -539,44 +539,67 @@
 
     <!--Your name here-->
     <section class="fourth">
-        <div class="font_slider">
-            <img style="margin: 40px;" src="images/images_2692.png">
+        <div class="font_slider ant-carousel" id="slider-two">
+            <img style="margin: 40px 0px 55px;" src="images/images_2692.png">
             <div class="parent_speech">
-                <btn class="button_slider_1"></btn>
-                <btn class="button_slider_2"></btn>
-                <btn class="button_slider_3"></btn>
-                <div class="child_first">
-                    <p class="kovichki">"</p>
-                    <p class="text_slider">Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum
-                        dolor</p>
-                    <p class="kovichki">"</p>
+                <div class="ant-carousel-list">
+                    <div class="ant-carousel-element slider_element">
+                        <p class="child">
+                            <span class="kovichki">“</span>
+                            <span class="text_slider">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor.
+                                Etiam iaculis, nibh a lobortis egestas, est urna sodales</span>
+                            <span class="kovichki">”</span>
+                        </p>
+
+                        <div class="author">
+                            <p>ALEXANDR PODVALNY</p>
+                        </div>
+
+                        <div>
+                            <p class="company">Free-PSD-Template.com Company</p>
+                        </div>
+                    </div>
+                    <div class="ant-carousel-element slider_element">
+                        <p class="child">
+                            <span class="kovichki">“</span>
+                            <span class="text_slider">sit amet pretium odio magna eret risus. Phsellus iaculis uitricies dui
+                                lobortis</span>
+                            <span class="kovichki">”</span>
+                        </p>
+
+                        <div class="author">
+                            <p>ALEXANDR ZAVALNY</p>
+                        </div>
+
+                        <div>
+                            <p class="company">Free-PSD-Template.com Company</p>
+                        </div>
+                    </div>
+                    <div class="ant-carousel-element slider_element">
+                        <p class="child">
+                            <span class="kovichki">“</span>
+                            <span class="text_slider">turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet
+                                pretium</span>
+                            <span class="kovichki">”</span>
+                        </p>
+
+                        <div class="author">
+                            <p>ALEXANDR POGREBNY</p>
+                        </div>
+
+                        <div>
+                            <p class="company">Free-PSD-Template.com Company</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="child_second">
-                    <p class="kovichki">"</p>
-                    <p class="text_slider">sit amet pretium odio magna eret risus. Phsellus iaculis uitricies dui
-                        lobortis</p>
-                    <p class="kovichki">"</p>
-                </div>
-                <div class="child_third">
-                    <p class="kovichki">"</p>
-                    <p class="text_slider">turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet
-                        pretium</p>
-                    <p class="kovichki">"</p>
-                </div>
-                <div class="author">
-                    <p>ALEXANDR PODVALNY</p>
-                </div>
-                <div class="author_second">
-                    <p>ALEXANDR ZAVALNY</p>
-                </div>
-                <div class="author_third">
-                    <p>ALEXANDR POGREBNY</p>
-                </div>
-                <div>
-                    <p class="company">Free-PSD-Template.com Company</p>
-                </div>
+
+                <div class="ant-carousel-dots"></div>
             </div>
+
         </div>
+
+        <script>new Ant("slider-two", false, true)</script>
+
         <div class="map">
             <div class="label_map">
                 <img style="margin: 3px 5px;" src="images/icon_logo_2452.png">

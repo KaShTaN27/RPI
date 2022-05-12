@@ -1,6 +1,6 @@
 .font_slider{
     width: 1600px;
-    height: 524px;
+    height: 518px;
     background-image: url("../images/background_image_2698.png");
     display: flex;
     flex-direction: column;
@@ -8,175 +8,74 @@
     align-items: center;
 }
 
+.slider_element{
+    width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-right: 400px;
+}
+
 .face_font_slider{
     display: flex;
-    //justify-content: center;
-    //align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .parent_speech{
-    align-items: center;
-    width: 900px;
-    height: 200px;
-    position: relative;
-    flex-direction: column;
-}
-
-.child_first{
+    width: 800px;
     display: flex;
-    position: absolute;
-    left: 5px;
-    top: 25px;
-    align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-content: center;
+
+
 }
 
-.child_second{
-    display: none;
-    position: absolute;
-    left: 5px;
-    top: 25px;
-    align-items: center;
-    flex-direction: row;
-}
-
-.child_third{
-    display: none;
-    position: absolute;
-    left: 5px;
-    top: 25px;
-    align-items: center;
-    flex-direction: row;
+.child{
+    width: 800px;
+    text-align: center;
+    line-height: 0px;
 }
 
 .kovichki{
-    margin: -30px;
-    margin-left: 10px;
-    color: #cecece;
+    font-family: 'Crimson Text';
     font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: #efefef;
+
+    vertical-align: -20px;
 }
 
 .text_slider{
-    margin-left: 35px;
     font-family: 'Crimson Text';
     font-size: 20px;
-    line-height: 25px;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    color: #cecece;
+    line-height: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: #efefef;
 }
 
 .author{
-    display: flex;
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 350px;
     font-family: Montserrat;
     letter-spacing: 0.1em;
     font-size: 13px;
     color: #cecece;
-}
 
-.author_second{
-    display: none;
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 350px;
-    font-family: Montserrat;
-    letter-spacing: 0.1em;
-    font-size: 13px;
-    color: #cecece;
-}
-
-.author_third{
-    display: none;
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 350px;
-    font-family: Montserrat;
-    letter-spacing: 0.1em;
-    font-size: 13px;
-    color: #cecece;
+    margin: 50px 0px 18px;
 }
 
 .company{
-    position: absolute;
-    margin-top: 140px;
-    margin-left: 320px;
     font-family: 'Montserrat', cursive;
     font-style: italic;
     font-size: 13px;
     color: #cecece;
-}
-.button_slider_1{
-    background-image: url("../images/ellipse_2424.png");
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    left: 415px;
-    top: 225px;
-}
 
-.button_slider_1:hover{
-    background-image: url("../images/ellipse_2426.png");
-}
-
-.button_slider_2{
-    background-image: url("../images/ellipse_2424.png");
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    left: 440px;
-    top: 225px;
-}
-
-.button_slider_2:hover{
-    background-image: url("../images/ellipse_2426.png");
-}
-
-.button_slider_3{
-    background-image: url("../images/ellipse_2424.png");
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    left: 465px;
-    top: 225px;
-}
-
-.button_slider_3:hover{
-    background-image: url("../images/ellipse_2426.png");
-}
-
-.button_slider_2:hover ~ .child_second{
-    display: flex;
-}
-
-.button_slider_2:hover ~ .child_first{
-    display: none;
-}
-
-.button_slider_2:hover ~ .author_second{
-    display: flex;
-}
-
-.button_slider_2:hover ~ .author{
-    display: none;
-}
-
-.button_slider_3:hover ~ .child_third{
-    display: flex;
-}
-
-.button_slider_3:hover ~ .child_first{
-    display: none;
-}
-
-.button_slider_3:hover ~ .author_third{
-    display: flex;
-}
-
-.button_slider_3:hover ~ .author{
-    display: none;
+    margin-bottom: 45px;
 }
 
 .map{
