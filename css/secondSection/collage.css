@@ -11,6 +11,14 @@
     flex-direction: column;
 }
 
+.column1 {
+    left: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .road {
     position: absolute;
     top: 418px;
