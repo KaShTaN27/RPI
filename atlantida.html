@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/thirdLvl.css">
     <link rel="stylesheet" type="text/css" href="css/fourth.css">
+	<link rel="stylesheet" type="text/css" href="anim.css">
     <title>Atlantida</title>
 </head>
 <body>
@@ -328,28 +329,28 @@
                 dolor, sit amet pretium odio magna eget risus.
             </p>
             <div style="display: flex; gap: 5px">
-                <button class="btn">ALL</button>
-                <button class="btn">WEBSITE</button>
-                <button class="btn">BROCHURES</button>
-                <button class="btn">LOGOS</button>
+                <button class="btn" id="button_first">ALL</button>
+                <button class="btn" id="button_second">WEBSITE</button>
+                <button class="btn" id="button_third">BROCHURES</button>
+                <button class="btn" id="button_fourth">LOGOS</button>
             </div>
         </div>
 
         <!--collage-->
-        <div class="photoCollage">
-            <div class="column">
-                <img src="images/collage/clouds.jpg" alt="clouds"/>
-                <img class="road" src="images/collage/road.jpg" alt="road"/>
+        <div class="photoCollage" id="photo_coll">
+            <div class="column" id="column1">
+                <img src="images/collage/clouds.jpg" id="check_image" alt="clouds"/>
+                <img class="road" src="images/collage/road.jpg" id="check_image2" alt="road"/>
             </div>
-            <div class="column">
+            <div class="column" id="column2">
                 <img src="images/collage/mountain.jpg" alt="mountain"/>
                 <img class="face" src="images/collage/face.jpg" alt="face" width="400px"/>
             </div>
-            <div class="column">
+            <div class="column" id="column3">
                 <img src="images/collage/human.jpg" alt="human"/>
                 <img class="underWater" src="images/collage/underWater.jpg" alt="underWater"/>
             </div>
-            <div class="column">
+            <div class="column" id="column4">
                 <img src="images/collage/sea.jpg" alt="sea" width="402px"/>
                 <img class="cup" src="images/collage/cup.jpg" alt="cup" height="253px" width="402px"/>
             </div>
@@ -665,4 +666,5 @@
     <link rel="stylesheet" href="css/ModalStyle.css">
 	<script src="ModalWindow.js"></script>
     <script src="contactForm.js"></script>
+	<script src="Portfolio.js"></script>
 </html>
