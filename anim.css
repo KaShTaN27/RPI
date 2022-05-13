@@ -1,0 +1,74 @@
+.my_img {
+   /* width: 399px;*/
+    /*position: relative;
+    top: 50%;
+    left: 100px;*/
+   /* height: 437px;*/
+    /*transform: translateY(-50%);*/
+    animation-name: Appearance;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+}
+
+.my_img1 {
+    position: absolute;
+    top: 418px;
+    animation-name: Appearance;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+}
+
+.my_img3 {
+    position: absolute;
+    top: 303px;
+    animation-name: Appearance;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+}
+
+.my_img5 {
+    position: absolute;
+    top: 230px;
+    animation-name: Appearance;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+}
+
+.my_img7 {
+    position: absolute;
+    top: 436px;
+    animation-name: Appearance;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+}
+
+@-webkit-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-o-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*.my_image {
+    max-width: 100%;
+    animation: fade 5s linear infinite;
+    animation-delay: 2.5s;
+}
+@keyframes fade {
+    0% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 1 }
+}*/
