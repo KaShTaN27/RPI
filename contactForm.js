@@ -35,6 +35,8 @@ function showAlert() {
     document.getElementById('edit1').value = '';
     document.getElementById('edit2').value = '';
     document.getElementById('edit3').value = '';
+    document.getElementById('edit4').value = '';
+    document.getElementById('edit5').value = '';
     checkValidity();
 }
 
